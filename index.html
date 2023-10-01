@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            column positioning
+        </title>
+        <style>
+            
+            p{
+                background-color: gray;
+                width: 90%;
+                height: 175px;
+                color: black;
+                font-size: 20px;
+                text-align: center;
+                margin-right: 10px;
+                margin-left: auto;
+                font-family: Halvetica;
+                margin-top: 30px;
+                border: 2px solid black;
+                
+                
+            }
+            h1{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .row{
+                width: 100%;
+            }
+            /*large devices*/
+            @media (min-width:992px){
+                .col_lg_1, .col_lg_2, .col_lg_3, .col_lg_4, .col_lg_5, .col_lg_6, .col_lg_7, .col_lg_8, .col_lg_9, .col_lg_10, .col_lg_11,.col_lg_12{
+                    float: left;
+                    
+                }   
+                .col_lg_1{
+                    width: 8.33%;
+                }         
+                .col_lg_2{
+                    width: 16.66%;
+                }
+                .col_lg_3{
+                    width: 25%;
+                }
+                .col_lg_4{
+                    width: 33%;
+                }
+                .col_lg_5{
+                    width: 41.66%;
+                }
+                .col_lg_6{
+                    width: 50%;
+                }
+                .col_lg_7{
+                    width: 58.33%;
+                }
+                .col_lg_8{
+                    width: 66.66%;
+                }
+                .col_lg_9{
+                    width: 74.99%;
+                }
+                .col_lg_10{
+                    width: 83.33%;
+                }
+                .col_lg_11{
+                    width: 91.66%;
+                }
+                .col_lg_12{
+                    width: 100%;
+                }
+            }
+            /*medium devices*/
+            @media (min-width:768px) and (max-width:991px) {
+                .col_md_1, .col_md_2, .col_md_3, .col_md_4, .col_md_5, .col_md_6, .col_md_7, .col_md_8, .col_md_9, .col_md_10, .col_md_11,.col_md_12{
+                    float: left;
+                }   
+                .col_md1{
+                    width: 8.33%;
+                }         
+                .col_md_2{
+                    width: 16.66%;
+                }
+                .col_md_3{
+                    width: 25%;
+                }
+                .col_md_4{
+                    width: 33%;
+                }
+                .col_md_5{
+                    width: 41.66%;
+                }
+                .col_md_6{
+                    width: 50%;
+                }
+                .col_md_7{
+                    width: 58.33%;
+                }
+                .col_md_8{
+                    width: 66.66%;
+                }
+                .col_md_9{
+                    width: 74.99%;
+                }
+                .col_md_10{
+                    width: 83.33%;
+                }
+                .col_md_11{
+                    width: 91.66%;
+                }
+                .col_md_12{
+                    width: 100%;
+                }
+            }
+            #p1{
+                background-color: pink;
+                position: relative;
+                float: right;
+                height: 20px;
+                width: 60px;
+               
+                border: 2px solid black;
+            }
+            #p2{
+                background-color: red;
+                position: relative;
+                float: right;
+                color: white;
+                height: 20px;
+                width: 60px;
+                border: 2px solid black;
+            }
+            #p3{
+                background-color: yellow;
+                position: relative;
+                float: right;                
+                height: 20px;
+                width: 60px;
+                border: 2px solid black;
+
+            }
+            
+        </style>
+    </head>
+        <body>
+            <h1>Our Menu</h1>
+            <div class="row">
+                <div class="col_lg_4 col_md_6">
+                    <p id="p1">
+                        samosa
+                        </p>
+                    
+                    <p>
+                        <br><br>Once you taste our food will make you feel craved always so 
+                        be controlled of your greedy cravings as soon as you visit. People for very far away
+                        comes to our shop just for tasty food.
+                    </p></div>
+                <div class="col_lg_4 col_md_6">
+                    <p id="p2">
+                        lassi
+                        </p>
+                    <p><br><br>
+                        Once you taste our food will make you feel craved always so 
+                        be controlled of your greedy cravings as soon as you visit. People for very far away
+                        comes to our shop just for tasty food.</p></div>
+                <div class="col_lg_4 col_md_12">
+                    <p id="p3">
+                        kachori
+                        </p>
+                    <p><br><br>
+                        Once you taste our food will make you feel craved always so 
+                        be controlled of your greedy cravings as soon as you visit. People for very far away
+                        comes to our shop just for tasty food.</p></div>
+            </div>
+        </body>
+</html>
